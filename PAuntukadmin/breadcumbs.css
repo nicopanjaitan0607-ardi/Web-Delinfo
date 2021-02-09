@@ -1,0 +1,62 @@
+
+.breadcrumb-holder {
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumb-holder ul {
+  display: flex;
+}
+
+.breadcrumb-holder li:last-of-type a {
+  cursor: text;
+}
+
+.breadcrumb-holder li a, .breadcrumb-holder li a:link, .breadcrumb-holder li a:visited {
+  text-decoration: none;
+  display: block;
+}
+
+
+
+.angled-breadcrumbs li a, .angled-breadcrumbs li a:link, .angled-breadcrumbs li a:visited {
+  padding: 5px 5px 5px 20px;
+  color: white;
+  background: #698f87;
+  position: relative;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.angled-breadcrumbs li:first-of-type a {
+  padding: 5px 5px 5px 10px;
+}
+
+.angled-breadcrumbs li a:before, .angled-breadcrumbs li a:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -12px;
+  border: 16px solid transparent;
+  border-right: none;
+  border-left: 13px solid #698f87;
+}
+
+.angled-breadcrumbs li a:before {
+  right: -13px;
+  border-left: 13px solid white;
+}
+
+.angled-breadcrumbs li a:hover, .angled-breadcrumbs li:last-of-type a {
+  background: #2f8e7a;
+}
+
+.angled-breadcrumbs li a:hover:after, .angled-breadcrumbs li:last-of-type a:after {
+ border-left: 13px solid #2f8e7a; 
+}
+
+.bread{
+ padding-left: 50%;
+}

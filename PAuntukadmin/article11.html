@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>DelInfo</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="beranda1.css">
+    <link rel="stylesheet" href="semua.css">
+  <script src="beranda.js"></script>
+  <link rel="stylesheet" type="text/css" href="article1.css">
+
+  <title></title>
+  <style> 
+  .wrapper{
+    padding: 100px;
+    margin: 0 0 50px 0;
+    text-align: left;
+    height: 60vh;
+    background: url("gambar/11.jpg") no-repeat center center fixed;
+    background-size: cover;
+    transition: all 0.4s ease;
+  }
+  </style> 
+</head>
+  <body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="Beranda.php">DelInfo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Beranda.php">BERANDA</a></li>
+        <li><a href="SejarahDel.html">DEL</a></li>
+        <li><a href="Menuartikel.php">ARTIKEL</a></li>
+        <li>
+        <div class="dropdown">
+          <button class="dropbtn">INFO</button>
+          <div class="dropdown-content">
+            <a href="Menubeasiswa.php">BEASISWA</a>
+            <a href="Menutukar.php">PERTUKARAN MAHASISWA</a>
+            <a href="Menumagang.php">MAGANG MAHASISWA</a>
+          </div>
+        </div></li>
+        <li><a href="Menuevent.php">EVENT</a></li>
+        <li><a href="forum.php">FORUM</a></li>'
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="article">
+  <div class="wrapper">
+    <div class="wrapperText">
+      <p id="author">
+      </p>
+    </div>
+  </div>
+    <div class="articleText">
+      <h4>Perbedaan Testing Dalam Pembuatan Aplikasi</h4>
+     <p><img src="gambar/11.jpg">
+        <p>Dalam proses pembuatan sebuah aplikasi, perlu dilakukan sebuah tahapan yang bernama software testing. Tahapan ini penting dilakukan untuk menguji kualitas fitur, keamanan dan kinerja dari aplikasi tersebut. Pada umumnya developer masih suka menyepelekan testing karena memang cukup memakan waktu di awal proses development. Seiring berjalannya waktu, aplikasi yang dibangun pun akan semakin besar dan logika yang diimplementasikan juga semakin banyak. Pada titik tersebut, tingkat confidence akan semakin rendah jika ingin menambahkan fitur baru. Menjaga fitur lama tetap berjalan semestinya dan performa yang tetap baik menjadi masalah yang sulit untuk dipertahankan. Software testing merupakan salah satu engineering practices yang dapat menjadi solusi untuk permasalahan tersebut. Software testing juga dapat membuat aplikasi menjadi lebih predictable dan traceable. Dalam pengaplikasiannya software testing terbagi menjadi beberapa tingkatan. Secara garis besar berikut adalah tingkatan yang pada umumnya diimplementasi oleh perusahaan-perusahaan IT.
+          <p><b>Unit Testing</b>
+            <p>Unit testing merupakan proses pengujian pada bagian terkecil dari aplikasi, biasanya pada pengujian dilakukan pada sebuah function ataupun object. Pengujian yang dilakukan biasanya cukup ketat mencakup semua kemungkinan yang dapat terjadi pada bagian yang diuji mencakup base case, edge case hingga corner case. Pada tahap ini tidak ada aplikasi atau service lain diluar aplikasi tersebut yang dipanggil, seperti mengakses database ataupun file. Untuk mengakomodir hal tersebut diperlukan mock data atau object tiruan.
+              <p><b>Interogation Testing</b>
+                <p>Tahapan berikutnya setelah unit test adalah menguji unit-unit tersebut bekerja dalam satu kesatuan. Pengujian dilakukan untuk melihat sebuah aplikasi dapat terkoneksi dan berfungsi dengan aplikasi yang lain sesuai yang diharapkan. Jika aplikasi tersebut memerlukan aplikasi lain seperti database atau 3rd party service, maka koneksi antar aplikasi tersebut harus benar-benar dilakukan, bukan lagi dari mock data. Pengujian yang dilakukan pada tahap ini tidak boleh terlalu detail, karena tujuan dari test ini bukanlah menguji ketepatan dari sebuah aplikasi. Hal lain yang harus diperhatikan adalah data yang digunakan. Sebisa mungkin data yang digunakan hanya digunakan untuk pengujian aplikasi tersebut (tidak digunakan oleh aplikasi yang lain).
+                  <p><b>Functional Testing</b>
+                    <p>Functional test berfokus pada business requirement-nya. Pada bagian ini hanya dicek keluaran dari flow yang dilakukan dan tidak mengecek state yang berjalan ditengah-tengahnya.
+                        Ada sedikit perbedaan antara integration testing dan functional testing, meskipun keduanya sama-sama menggunakan lebih dari satu komponen yang berinteraksi. Perbedaannya adalah integration test memiliki test yang lebih sederhana, seperti misalnya mengecek query dari database yang dijalankan dari aplikasi yang outputnya mendapatkan spesifik id dari tes yang diuji.
+            <p><b>End-to-end Testing</b>
+              <p>End-to-end testing adalah testing yang menyamakan user behaviour dengan aplikasi dengan environment yang sama seperti production. Memastikan berbagai macam user flow berjalan dengan semestinya. Seperti misalnya menguji hal yang sederhana seperti loading screen, menyimpan data ataupun hal yang lebih kompleks lainnya seperti dari login berlanjut sampai selesai transaksi.
+                  End-to-end testing sangat bermanfaat, namun sangat costly. Mengimplementasikannya cukup sulit dan sangat berat untuk di-maintain apalagi jika sudah automated. Sangat direkomendasikan untuk memiliki sedikit tes pada bagian ini dan lebih berfokus pada lower-level testing (unit & integration tests). Karena pada bagian yang lebih rendah lebih mudah untuk diidentifikasi dan di trace back.
+        <p><b>Acceptance Testing</b>
+          <p>Pengujian terakhir adalah dimana pengujian dilakukan secara keseluruhan atau biasa disebut end-to-end testing. Pengujian ini lebih difokuskan pada flow atau behaviour sebuah aplikasi. Pengujian bisa dilakukan dengan cara melakukan simulasi nyata penggunaan aplikasi pada environment yang sebenarnya. Hal yang diuji juga sangat general seperti melakukan normal flow ataupun masukan kosong. Ini adalah tahapan terakhir sebelum akhirnya aplikasi benar-benar siap untuk dirilis.
+            <p><b>Performance testing</b>
+              <p>Performance testing digunakan untuk mengukur kemampuan performa suatu aplikasi sampai suatu batas tertentu. Tes ini bukan merupakan functional-test dan bisa dalam berbagai macam bentuk untuk memahami reliability, stability dan availability pada environment-nya. Sebagai contoh, bisa berupa mengamati response time ketika menjalankan request dalam jumlah yang sangat banyak ataupun melihat suatu sistem berinteraksi dengan jumlah data yang cukup besar.
+                  Pada umumnya performance testing cukup mahal untuk diaplikasikan dan dijalankan, namun dapat dijadikan tolak ukur apakah sistem tersebut dapat mengakomodasi traffic yang ada.
+            <p><b>Smoke testing</b>  
+              <p>Smoke testing dapat diartikan seperti pre-testing. Tes ini harus berjalan dengan sederhana dan cepat. Tujuannya adalah untuk memastikan tes-tes kompleks lain yang akan dijalankan berikutnya dapat berjalan dengan baik, sehingga ketika ada hal major yang rusak dapat terdeteksi diawal. Selain itu juga dapat difungsikan sebagai warm-up caching, sehingga cache system yang ada pada aplikasi dapat “diisi” terlebih dahulu.
+              <p><b>Bagaimana membuat automated tests</b>
+                <p>Tes-tes diatas tentu dapat dilakukan masing-masing individu, namun akan sangat mahal dan tidak produktif untuk dilakukan. Sebagai manusia, tentu kita punya batasan-batasan dalam melakukan tes-tes dalam jumlah yang besar, berulang dan dengan cara yang tidak manusiawi. Tapi tentu komputer dapat melakukan hal-hal tersebut dengan sangat mudah dan cepat, juga dapat mengingat kombinasi huruf dan angka yang sulit dalam jumlah yang banyak tanpa kesulitan.
+                    Untuk membuat automated test, diperlukan test suite framework yang tepat dan cocok dengan aplikasinya. JUnit, Mocha, RSpec adalah salah satu contoh testing framework yang dapat digunakan dari masing-masing bahasa pemrograman. Ada berbagai macam opsi lainnya dari setiap bahasa jika mau mencari, jangan lupa untuk tanya kolega ataupun komunitas developer untuk mencari tahu mana framework yang tepat.
+                <p>Ketika tes dapat dijalankan dengan script dari terminal, maka tes yang telah dibuat tentu dapat dengan otomatis pula dijalankan pada continuous integration server seperti Bamboo atau CircleCI ataupun menggunakan cloud service seperti Bitbucket Pipelines. Tools-tools seperti inilah yang dapat me-monitor repository dan menjalankan test-suite ketika ada perubahan pada main repository.
+                  <p><b>Penutup</b>
+                    <p>Testing berperan penting untuk mengukur seberapa baik kualitas aplikasi dimana user bisa menggunakan aplikasinya (seperti login, menyimpan data). Selain itu berfungsi juga agar aplikasi yang dibuat tidak crash ketika ada data buruk yang masuk ataupun hal-hal lain yang tidak diinginkan dalam pengoperasiannya. Antisipasi dari typo, data yang belum lengkap ataupun salah URL. Aplikasi harus dapat mengambil dan mengolah data dengan mudah dan menjaganya jika data tersebut memang hanya user tersebut yang dapat mengaksesnya. Testing yang bagus dapat mengukur kemampuan aplikasinya sampai pada batas yang memang aplikasi tersebut dapat lakukan.
+
+        
+                
+         
+            </div>
+</div>
+
+
+</body>
+</html>
